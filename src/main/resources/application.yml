@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://101.101.211.71:5433/project?autoReconnect=true
+    username: postgres
+    password: A!S@d3f4g5
+  devtools:
+    livereload:
+      enabled: false
+    restart:
+      enabled: false
+
+server:
+  port: 9600
+  error:
+    include-stacktrace: always
+    whitelabel:
+      enabled: true
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+    session:
+      timeout: 0
