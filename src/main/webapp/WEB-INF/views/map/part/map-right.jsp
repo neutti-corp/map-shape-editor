@@ -152,19 +152,9 @@
             </div>
         </div>
     </div>
-    <%--<div class="container mt-3">
-        <div class="row">
-            <div class="col pe-2">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    등록
-                </button>
-            </div>
-            <div class="col ps-2">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    수정
-                </button>
-            </div>
-        </div>
-    </div>--%>
-
+    <div class="container p-2  nmap-right-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#autoRegistModal">
+            등록
+        </button>
+    </div>
 </div>

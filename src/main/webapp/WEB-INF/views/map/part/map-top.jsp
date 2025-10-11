@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex" href="#">
-                <img class="nmap-logo" src="${pageContext.request.contextPath}/static/images/logo.png" alt="Logo">
+                <img class="nmap-logo" src="${pageContext.request.contextPath}/static/images/logo/logo01.svg" alt="Logo">
                 <div class="nmap-title">
                     <span class="nmap-maintitle">대한민국육군</span>
                     <span class="nmap-subtitle">Republic Of Korea Army</span>
@@ -32,18 +32,19 @@
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>--%>
-                <div class="d-flex gap-3 ">
+                <div class="d-flex gap-3 position-relative">
+                    <a class="header-right-btn" data-bs-toggle="modal" data-bs-target="#alertModal">
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-14.svg" alt=""/>
+                    </a>
+                    <span class="nmap-badge">3</span>
                     <a class="header-right-btn" onclick="alert();">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/header-btn-bell.svg" width="25" height="25"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-21.svg"/>
                     </a>
                     <a class="header-right-btn" onclick="alert();">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/header-btn-x.svg" width="25" height="25"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-24.svg"/>
                     </a>
                     <a class="header-right-btn" onclick="alert();">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/header-btn-minus.svg" width="25" height="25"/>
-                    </a>
-                    <a class="header-right-btn" onclick="alert();">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/header-btn-link.svg" width="25" height="25"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-27.svg"/>
                     </a>
                 </div>
             </div>
