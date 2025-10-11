@@ -19,6 +19,10 @@
     <script src="${pageContext.request.contextPath}/static/plugin/bootstrap-v5.3.8/js/bootstrap.bundle.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMap.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMapLayer.js"></script>
+
+    <link href="${pageContext.request.contextPath}/static/css/views.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/static/js/views.js"></script>
+
     <style type="text/css">
         body {
             margin: 0;

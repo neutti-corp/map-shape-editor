@@ -1,38 +1,158 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<div class="nmap-right">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="nmap-right" data-bs-theme="dark">
+    <div class="accordion accordion-flush accordion-dark" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+                <button class="accordion-button collapsed gap-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <span>무인 자율 목록 #1</span>
+                    <a class="d-flex">
+                        <img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg" width="18" height="18"/>
+                    </a>
                 </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body d-flex flex-column gap-2">
+                    <div class="auto-item success">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item wait">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #2</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item error">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #3</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
+                <button class="accordion-button collapsed gap-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <span>무인 자율 목록 #2</span>
+                    <a class="d-flex">
+                        <img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg" width="18" height="18"/>
+                    </a>
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                <div class="accordion-body d-flex flex-column gap-2">
+                    <div class="auto-item success">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item wait">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item error">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                <button class="accordion-button collapsed gap-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span>무인 자율 목록 #3</span>
+                    <a class="d-flex">
+                        <img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg" width="18" height="18"/>
+                    </a>
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body d-flex flex-column gap-2">
+                    <div class="auto-item success">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item wait">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-item error">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column">
+                                <span class="item-title">무인 자율 #1</span>
+                                <span class="item-info">25/30Km</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="item-state">정상</span>
+                                <a class="d-flex"><img src="${pageContext.request.contextPath}/static/images/icon/map-right-reload.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container mt-3">
+    <%--<div class="container mt-3">
         <div class="row">
             <div class="col pe-2">
                 <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -45,6 +165,6 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div>--%>
 
 </div>
