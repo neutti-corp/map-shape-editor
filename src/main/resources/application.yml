@@ -1,3 +1,15 @@
+application:
+  map:
+    ngii:
+      apikey: 63AEED5B92651B793F4E3EC2A21B80A8
+      url: https://map.ngii.go.kr/openapi/Gettile.do
+      sub:
+        url: http://210.117.198.120:8081/o2map/services
+      cache:
+        path: ~/kma-tilemap-cache/
+    geoserver:
+      url: http://220.90.239.149:8080/geoserver
+
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource

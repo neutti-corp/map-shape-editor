@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<div class="nmap-right" data-bs-theme="dark">
+<div class="nmap-right">
     <div class="accordion accordion-flush accordion-dark" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header">
@@ -158,3 +158,6 @@
         </button>
     </div>
 </div>
+<script>
+
+</script>

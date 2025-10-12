@@ -37,13 +37,13 @@
                         <img src="${pageContext.request.contextPath}/static/images/icon/DIV-14.svg" alt=""/>
                     </a>
                     <span class="nmap-badge">3</span>
-                    <a class="header-right-btn" onclick="alert();">
+                    <a class="header-right-btn" onclick="N.Map.Helper.openFullScreen()">
                         <img src="${pageContext.request.contextPath}/static/images/icon/DIV-21.svg"/>
                     </a>
-                    <a class="header-right-btn" onclick="alert();">
+                    <a class="header-right-btn" onclick="N.Map.UI.toggleRight()">
                         <img src="${pageContext.request.contextPath}/static/images/icon/DIV-24.svg"/>
                     </a>
-                    <a class="header-right-btn" onclick="alert();">
+                    <a class="header-right-btn" onclick="N.Map.logout()">
                         <img src="${pageContext.request.contextPath}/static/images/icon/DIV-27.svg"/>
                     </a>
                 </div>
@@ -51,3 +51,6 @@
         </div>
     </nav>
 </div>
+<script>
+
+</script>

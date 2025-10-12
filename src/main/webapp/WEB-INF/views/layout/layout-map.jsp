@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/plugin/ol-v10.6.0/ol.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMap.css">
     <link href="${pageContext.request.contextPath}/static/plugin/bootstrap-v5.3.8/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/plugin/toastity/toastify.min.css" />
+    <script src="${pageContext.request.contextPath}/static/plugin/toastity/toastify-js.js" ></script>
+    <script src="${pageContext.request.contextPath}/static/plugin/jquery-3.7.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/ol-v10.6.0/ol.js"></script>
+    <script src="${pageContext.request.contextPath}/static/plugin/pro4j.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/bootstrap-v5.3.8/js/bootstrap.bundle.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMap.js"></script>
+    <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMapProj.js"></script>
+    <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMapHelper.js"></script>
     <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMapLayer.js"></script>
-
+    <script src="${pageContext.request.contextPath}/static/plugin/nmap-v1.0.0/NMapUI.js"></script>
     <link href="${pageContext.request.contextPath}/static/css/views.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath}/static/js/views.js"></script>
 
@@ -30,6 +36,9 @@
             /*font-size: 0.9em;*/
         }
     </style>
+    <script type="text/javascript">
+
+    </script>
 </head>
 <body>
 <tiles:insertAttribute name="body"/>

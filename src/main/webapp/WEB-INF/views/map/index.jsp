@@ -6,16 +6,23 @@
 <%@include file="part/map-left.jsp"%>
 <%@include file="part/map-right.jsp"%>
 <div class="btn-group nmap-basemap" role="group" aria-label="Basic outlined example">
-    <button type="button" class="btn active">일반지도</button>
-    <button type="button" class="btn">영상지도</button>
+    <button type="button" class="btn active" data-nmap-name="korean_map">일반지도</button>
+    <button type="button" class="btn" data-nmap-name="AIRPHOTO">영상지도</button>
 </div>
 <%@include file="modal/map-base-modal.jsp"%>
 <%@include file="modal/map-alert-modal.jsp"%>
 <script>
+    (function(){
+        N.Map.init("map")
+        jQuery('.nmap-basemap').on("click","button",function(){
+            jQuery('.nmap-basemap button').removeClass('active')
+            jQuery(this).addClass('active')
+            var mapName = jQuery(this).data('nmap-name')
+            N.Map.Helper.changeBasemap(mapName)
+        })
 
-    N.Map.init("map")
-
-    document.addEventListener('DOMContentLoaded', function () {
+    })();
+    /*document.addEventListener('DOMContentLoaded', function () {
         const modalEl = document.getElementById('autoRegistModal');
         if (!modalEl) return;
         const modal = bootstrap.Modal.getOrCreateInstance(modalEl, {
@@ -23,5 +30,5 @@
             keyboard: false     // 필요 시: ESC 방지
         });
         //modal.show();
-    });
+    });*/
 </script>
