@@ -1,15 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <div class="nmap-left d-flex flex-column flex-shrink-0 p-3 text-white">
     <div class="left-menu-list">
-        <div class="left-menu-item active">
-            <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-regist.svg" width="20" height="20"/>
-            <span>무인 자율 등록</span>
-        </div>
-        <div class="left-menu-item">
-            <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-list.svg" width="20" height="20"/>
-            <span>무인 자율 적목</span>
-        </div>
-        <div class="left-menu-item">
+        <c:choose>
+            <c:when test="${TYPE1 eq 'EVTS'}">
+            <div class="left-menu-item active">
+                <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-regist.svg" width="20" height="20"/>
+                <span>무인 자율 등록</span>
+            </div>
+            <div class="left-menu-item">
+                <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-list.svg" width="20" height="20"/>
+                <span>무인 자율 목록</span>
+            </div>
+            </c:when>
+            <c:when test="${TYPE1 eq 'SGVS'}">
+            <div class="left-menu-item active">
+                <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-regist.svg" width="20" height="20"/>
+                <span>단말기 등록/승인</span>
+            </div>
+            <div class="left-menu-item">
+                <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-list.svg" width="20" height="20"/>
+                <span>경계 영상 목록</span>
+            </div>
+            </c:when>
+        </c:choose>
+        <%--<div class="left-menu-item">
             <img src="${pageContext.request.contextPath}/static/images/icon/menu-route-manage.svg" width="20" height="20"/>
             <span>경로 관리</span>
         </div>
@@ -20,7 +34,7 @@
         <div class="left-menu-item">
             <img src="${pageContext.request.contextPath}/static/images/icon/menu-monitoring.svg" width="20" height="20"/>
             <span>모니터링</span>
-        </div>
+        </div>--%>
         <hr>
         <div class="data-area">
             <div class="d-flex mb-2">
@@ -81,8 +95,8 @@
                 <img src="${pageContext.request.contextPath}/static/images/icon/menu-weather-sun.svg" width="18" height="18" alt="current weather" />
             </div>
         </div>
-        <hr>
-        <div class="left-menu-item">
+        <%--<hr>--%>
+        <%--<div class="left-menu-item">
             <img src="${pageContext.request.contextPath}/static/images/icon/menu-deformed-analysis.svg" width="20" height="20"/>
             <span>Deformed Analysis</span>
         </div>
@@ -101,7 +115,7 @@
         <div class="left-menu-item">
             <img src="${pageContext.request.contextPath}/static/images/icon/menu-admin.svg" width="20" height="20"/>
             <span>관리자</span>
-        </div>
+        </div>--%>
     </div>
 
 

@@ -1,12 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="nmap-top">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex" href="#">
-                <img class="nmap-logo" src="${pageContext.request.contextPath}/static/images/logo/logo01.svg" alt="Logo">
+                <c:choose>
+                    <c:when test="${TYPE1 eq 'EVTS'}">
+                    <img class="nmap-logo" src="${pageContext.request.contextPath}/static/images/logo/logo01.svg" alt="Logo">
+                    </c:when>
+                    <c:when test="${TYPE1 eq 'SGVS'}">
+                    <img class="nmap-logo" src="${pageContext.request.contextPath}/static/images/logo/logo02.webp" alt="Logo">
+                    </c:when>
+                </c:choose>
                 <div class="nmap-title">
-                    <span class="nmap-maintitle">대한민국육군</span>
-                    <span class="nmap-subtitle">Republic Of Korea Army</span>
+                    <span class="nmap-maintitle">${SYSTEM_MAINTITLE}</span>
+                    <span class="nmap-subtitle">${SYSTEM_SUBTITLE}</span>
                 </div>
             </a>
             <div class="collapse d-flex justify-content-end">
@@ -34,17 +42,17 @@
                 </ul>--%>
                 <div class="d-flex gap-3 position-relative">
                     <a class="header-right-btn" data-bs-toggle="modal" data-bs-target="#alertModal">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-14.svg" alt=""/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-14-${TYPE1}.svg" alt=""/>
                     </a>
                     <span class="nmap-badge">3</span>
                     <a class="header-right-btn" onclick="N.Map.Helper.openFullScreen()">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-21.svg"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-21-${TYPE1}.svg"/>
                     </a>
                     <a class="header-right-btn" onclick="N.Map.UI.toggleRight()">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-24.svg"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-24-${TYPE1}.svg"/>
                     </a>
                     <a class="header-right-btn" onclick="N.Map.logout()">
-                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-27.svg"/>
+                        <img src="${pageContext.request.contextPath}/static/images/icon/DIV-27-${TYPE1}.svg"/>
                     </a>
                 </div>
             </div>

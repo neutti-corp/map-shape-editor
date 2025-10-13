@@ -14,7 +14,7 @@
     position: absolute;
     top: 67px;
     width: 256px;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(31, 41, 55, 0.9));
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(31, 41, 55, 0.2));
     backdrop-filter: blur(8px);
     height: calc(100vh - 67px);
 }
@@ -29,7 +29,7 @@
     height: calc(100vh - 67px);
 }
 .nmap-logo{
-    width: 50px;
+    /*width: 50px;*/
     height: 50px;
     margin-right: 10px;
     align-self: center;
@@ -296,4 +296,17 @@ background-color: #dddddd;
 .nmap-basemap .btn.active{
     background-color: #2563EB;
     color: white;
+}
+
+/*.SYSTEM-SGVS .nmap-left{
+    background-color:  #A50000;
+}*/
+.SYSTEM-SGVS .nmap-top{
+    background: linear-gradient(to bottom,  #A50000,  #A50000);
+}
+.SYSTEM-SGVS .nmap-maintitle{
+    color: white;
+}
+.SYSTEM-SGVS .nmap-subtitle{
+    color: #cBc2c0;
 }
