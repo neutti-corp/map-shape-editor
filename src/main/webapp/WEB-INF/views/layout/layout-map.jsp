@@ -44,4 +44,9 @@
 </head>
 <body class="SYSTEM-${TYPE1}">
 <tiles:insertAttribute name="body"/>
+<footer class="nmap-bottom fixed-bottom bg-dark text-light text-center py-1 border-0">
+    <div class="container">
+        <small>© <span id="year"></span> Copyright KBitOne Inc. All Rights Reserved.</small>
+    </div>
+</footer>
 </body>

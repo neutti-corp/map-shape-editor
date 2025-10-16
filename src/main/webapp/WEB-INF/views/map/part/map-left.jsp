@@ -3,13 +3,13 @@
     <div class="left-menu-list">
         <c:choose>
             <c:when test="${TYPE1 eq 'EVTS'}">
-            <div class="left-menu-item active">
+            <div class="left-menu-item active" data-bs-toggle="modal" data-bs-target="#autoRegistModal">
                 <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-regist.svg" width="20" height="20"/>
-                <span>무인 자율 등록</span>
+                <span>무인 차량 등록</span>
             </div>
             <div class="left-menu-item">
                 <img src="${pageContext.request.contextPath}/static/images/icon/menu-auto-list.svg" width="20" height="20"/>
-                <span>무인 자율 목록</span>
+                <span>무인 차량 목록</span>
             </div>
             </c:when>
             <c:when test="${TYPE1 eq 'SGVS'}">
@@ -51,7 +51,7 @@
                         <span class="data-text">온도</span>
                     </div>
                     <div class="data-value">
-                        <span>23</span>
+                        <span>-</span>
                         <span>°C</span>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         <span class="data-text">습도</span>
                     </div>
                     <div class="data-value">
-                        <span>65</span>
+                        <span>-</span>
                         <span>%</span>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <span class="data-text">풍속</span>
                     </div>
                     <div class="data-value">
-                        <span>12</span>
+                        <span>-</span>
                         <span>km/h</span>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <span class="data-text">가시거리</span>
                     </div>
                     <div class="data-value">
-                        <span>10</span>
+                        <span>-</span>
                         <span>km</span>
                     </div>
                 </div>

@@ -3,14 +3,14 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">무인자율등록</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">무인차량등록</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="d-flex flex-column p-2 gap-2">
                     <div class="default-input-group">
                         <label>자율명</label>
-                        <input value="무인 자율 #1"/>
+                        <input value="무인 차량 #1"/>
                     </div>
                     <div class="default-input-group">
                         <label>자율번호</label>
@@ -28,8 +28,6 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="custom-btn green" data-bs-dismiss="modal">등록</button>
-                <button type="button" class="custom-btn orange" data-bs-dismiss="modal">수정</button>
-                <button type="button" class="custom-btn red" data-bs-dismiss="modal">삭제</button>
             </div>
         </div>
     </div>

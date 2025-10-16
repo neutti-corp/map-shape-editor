@@ -31,4 +31,13 @@ public class MapController {
         return "map/index";
     }
 
+    @RequestMapping(value="etri-map.html", method = {RequestMethod.GET})
+    public String etri(Model model, HttpServletRequest request) throws Exception {
+        model.addAttribute("TYPE1","SGVS");
+        model.addAttribute("SYSTEM_TITLE","ETRI : 재해분석시스템");
+        model.addAttribute("SYSTEM_MAINTITLE","재해분석시스템");
+        model.addAttribute("SYSTEM_SUBTITLE","");
+        return "etri/index";
+    }
+
 }

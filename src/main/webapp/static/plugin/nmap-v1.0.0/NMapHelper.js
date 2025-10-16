@@ -31,6 +31,11 @@ N.Map.Helper.changeBasemap = function(tileName){
         console.warn("알수없는 " + tileName + "입니다.")
     }
 }
+//37.047577, 127.874565
+//37.013199, 127.908331
+//ol.proj.transformExtent([129.400033,35.956598,129.438228,35.997163],'EPSG:4326','EPSG:5179')
+//ol.proj.transformExtent([128.660685,35.275169,128.660685,35.290910],'EPSG:4326','EPSG:5179')
+//ol.proj.transformExtent([128.874565,37.013199,128.908331,37.047577],'EPSG:4326','EPSG:5179')
 N.Map.Helper.openFullScreen = function(){
     const elem = document.documentElement;
     if (elem.requestFullscreen) {

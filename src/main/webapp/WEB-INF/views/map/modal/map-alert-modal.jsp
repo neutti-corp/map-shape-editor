@@ -10,7 +10,7 @@
                 <div class="d-flex flex-column p-2 gap-2">
                     <div class="default-input-group">
                         <label>자율명</label>
-                        <input value="무인 자율 #1"/>
+                        <input value="무인 차량 #1"/>
                     </div>
                     <div class="default-input-group">
                         <label>자율번호</label>
